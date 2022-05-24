@@ -23,7 +23,7 @@ interface PostProps {
 }
 
 const Home = ({artigos,noticias}: PostProps) => {
-  console.log(noticias)
+
   return (
     <div>
       <Head>
@@ -79,7 +79,7 @@ export const getStaticProps: GetStaticProps = async () =>{
     })
 
     const noticias = responseNoticia.results.map(noticia => {
-      console.log(noticia)
+
       return {
         slug: noticia.uid,
         title:RichText.asText(noticia.data.title),

@@ -52,8 +52,6 @@ export const getStaticProps: GetStaticProps = async () =>{
     }
   })
 
-  console.log(equipe)
-
   return {
     props: {
       equipe
